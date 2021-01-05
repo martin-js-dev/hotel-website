@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+$white: #fff;
+$black: #1c1c1c;
+$secoundary:rgb(187, 140, 21);
+$primary:#4d8eff;
+$accent:#2b6ddf;
+
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+.html {
+  font-size: 16px; 
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  position: relative;
+}
+
+h1{
+  font-family: 'Playfair Display';
+  font-size: 2.5rem;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+  
+}
+
+li {
+  list-style-type: none;
+  
+}
+
+p{
+  font-size: 1.3rem;
+}
+
+.button-primary{
+  white-space: nowrap;
+  border-radius: 5px;
+  padding: 1rem 3rem ;
+  text-transform: uppercase;
+  color:white;
+  text-align: center;
+  background-color: $primary;
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+  
+  &:hover{
+    background-color: $accent;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+    
+  }
+}
+
+
+
+.button-secoundary{
+  white-space: nowrap;
+  background-color: white;
+  border:1px solid $primary;
+  padding: 1rem 2rem;
+  color:$primary;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+
+  &:hover{
+    border:2px solid $primary;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+  }
+  
+}
+
+
+
+
+// <!--================HERO SECTION===============-->
+
+.hero-section{
+  color: $white;
+  background-image: url(img/hero-5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+
+.hero-mid{
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  padding-bottom: 5rem;
+  
+   li a {
+    text-transform: uppercase;
+   
+      &:hover{
+      color:$secoundary;
+    }
+  }
+}
+
+
+.logo{
+  height: 5rem;
+  width: 6rem;
+  margin-top: -1.5rem;
+}
+
+
+.booking label{
+  color:$secoundary;
+}
+
+.hero-social li a i{
+margin-bottom: 2rem;
+font-size: 1.2rem;
+
+}
+
+.line{
+  margin-right: 0.2rem;
+  height: 10rem;
+  width: 0.1rem;
+  border: 1px solid $accent;
+  
+}
+.lined{
+  display: flex;
+  
+}
+
+.hero-cta span{
+  text-transform: uppercase;
+  color:$secoundary;
+  .hero-cta p{
+    margin-bottom: 2rem;
+  }
+}
+
+
+.booking{
+  width: 40vw;
+  height: 55vh;
+  background-color: white;
+  display: flex;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+
+.calendar{
+ margin-left:3rem;
+ margin-top: 3rem;
+  
+}
+
+.guests{
+  margin-left:20rem;
+  margin-top: -13.2rem;
+
+  .guest{
+    margin-bottom: 2rem;
+    display: block;
+
+    select{
+      color:grey;
+      padding: 0.8rem 1rem;
+      margin-top: 0.5rem;
+      border:none;
+      background-color: rgb(241, 238, 238) ;
+    }
+  }
+  
+}
+
+
+.option {
+  color:inherit;
+  
+}
+
+.checkin{
+  display: block;
+  margin-bottom: 2rem;
+
+  div{
+    display: flex;
+  }
+   input{
+    padding: 0.8rem 1rem;
+    margin-top: 0.5rem;
+    border:none;
+    background-color: rgb(241, 238, 238);
+  }
+
+   i {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    color:$primary;
+    margin-top: 0.6rem;
+  }
+}
+
+
+
+
