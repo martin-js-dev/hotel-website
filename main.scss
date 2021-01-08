@@ -229,6 +229,250 @@ font-size: 1.2rem;
   }
 }
 
+/*=============MEDIA QUERIES====================*/
+
+@media screen and (min-width: 375px) {
+  .hero-section {
+    padding: 0rem 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .logo {
+    margin-left: -1rem;
+  }
+  .hero-cta {
+    h1 {
+      font-size: 1.7rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+  p {
+    display: none;
+  }
+  .nav-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0rem;
+
+    i {
+      font-size: 2rem;
+      margin-right: 5rem;
+      cursor: pointer;
+    }
+  }
+
+  .booking {
+    width: 70vw;
+    height: 20rem;
+    margin-top: 3rem;
+    overflow: hidden;
+    .button-secoundary {
+      margin-left: -8rem;
+    }
+    .calendar {
+      margin-top: 1.5rem;
+    }
+  }
+
+  .hero-mid {
+    display: block;
+  }
+  .hero-social {
+    display: flex;
+  }
+  i {
+    margin-right: 1.5rem;
+  }
+  .lined {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 1rem;
+  }
+  .navigation {
+    display: flex;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .hero-mid {
+    display: block;
+    margin-left: 6rem;
+  }
+  .hero-social {
+    display: flex;
+    i {
+      margin-right: 2rem;
+    }
+    .lined {
+      display: none;
+    }
+  }
+  .hero-cta {
+    display: block;
+    margin-right: 5rem;
+    h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .booking {
+    display: block;
+    width: 70vw;
+    height: 25rem;
+    padding-top: 2rem;
+    margin-top: 5rem;
+  }
+}
+
+// @media screen and (min-width:812px){
+//  .navigation{
+//    margin-top: -1rem;
+//  }
+
+//  .hero-social{
+//    display: none;
+//  }
+//   .hero-mid{
+//     margin-top: -3rem;
+//     margin-left: 0rem;
+//     display: flex;
+//   }
+
+//   .booking{
+//     width: 40vw;
+//     height: 70vh;
+//     margin-top: -1rem;
+//     padding: 0;
+//     background-color: transparent;
+
+//     .button-secoundary{
+//      display: none;
+//     }
+//     label{
+//       font-size: 0.8rem;
+//       background-color: grey;
+//       color:white;
+//       padding: 0.3rem 0.5rem;
+//       border-radius: 5px;
+
+//     }
+//     input{
+//       margin-top: 1rem;
+//       border-radius: 5px;
+//     }
+//     i{
+//       margin-top: 1.5rem;
+//     }
+//   }
+
+//   .hero-cta{
+//     h1{
+//       font-size: 1.7rem;
+//     }
+//   }
+
+//   .checkin{
+//     margin-bottom: 2rem;
+//   }
+
+// }
+
+@media screen and (min-width: 1024px) {
+  .booking {
+    display: flex;
+    height: 60vh;
+    margin-top: 0rem;
+    width: 40vw;
+  }
+
+  p {
+    display: block;
+  }
+  .hero-section {
+    padding: 2rem 3rem;
+    height: 100%;
+  }
+
+  .hero-mid {
+    display: flex;
+  }
+
+  .hero-social {
+    display: block;
+    margin-left: -5rem;
+  }
+  .calendar {
+    padding-left: 1rem;
+  }
+
+  .hero-cta {
+    margin-top: -2rem;
+  }
+  h1 {
+    font-size: 2.7rem;
+  }
+}
+
+@media screen and (min-width: 1466px) {
+  .hero-section {
+    padding-left: 10rem;
+    padding-right: 10rem;
+    padding-top: 3rem;
+    .button-secoundary {
+      margin-left: 3rem;
+      padding: 1rem 4rem;
+    }
+  }
+
+  .hero-mid {
+    margin-top: 5rem;
+  }
+
+  .hero-social {
+    margin-top: 7rem;
+  }
+  .calendar {
+    padding-left: 3rem;
+    padding-top: 2rem;
+  }
+
+  .booking {
+    height: 40vh;
+    margin-top: 5rem;
+  }
+  .booking input {
+    width: 20rem;
+  }
+
+  .guest select {
+    margin-left: 7rem;
+    width: 10rem;
+  }
+
+  .guest label {
+    margin-left: 7rem;
+  }
+
+  .hero-cta {
+    margin-top: 6rem;
+
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}
+
 
 
 
