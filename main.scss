@@ -474,5 +474,123 @@ font-size: 1.2rem;
 }
 
 
+// <!--================ABOUT US ===============-->
 
+.about-wrapper {
+  padding: 7rem 10rem;
+  padding-bottom: 3rem;
+  .a-p {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+  p {
+    width: 40rem;
+    text-align: center;
+    color: $black;
+  }
+}
+
+.a-title {
+  text-align: center;
+  margin-bottom: 1rem;
+  span {
+    text-transform: uppercase;
+    color: #bb8c15;
+  }
+}
+.about-icons {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-around;
+  span {
+    text-transform: uppercase;
+    color: #bb8c15;
+    font-weight: bold;
+  }
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    padding-top: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+/*=============OUR PROCESS====================*/
+
+.wrapper-process {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  h1 {
+    text-align: center;
+  }
+}
+.process {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+  margin-left: 4rem;
+}
+
+.process-img img {
+  width: 40rem;
+  clip-path: polygon(71% 0, 84% 44%, 100% 100%, 0 100%, 0 0);
+}
+
+.steps-process {
+  width: 40%;
+  margin-top: 1rem;
+  .one {
+    margin-left: -10rem;
+    h2 {
+      width: 5rem;
+    }
+  }
+  .two {
+    margin-left: -5rem;
+    h2 {
+      width: 5rem;
+    }
+  }
+  .three {
+    h2 {
+      width: 5rem;
+    }
+  }
+}
+
+.step-info {
+  margin-left: 2rem;
+  span {
+    text-transform: uppercase;
+    color: #bb8c15;
+  }
+  p {
+    font-size: 1.1rem;
+    width: 20rem;
+    color: $black;
+  }
+}
+.step-p {
+  margin-bottom: 3rem;
+}
+.step-f {
+  display: flex;
+  h2 {
+    background-color: $primary;
+    width: 11rem;
+    height: 5rem;
+    border-radius: 50%;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+}
 
