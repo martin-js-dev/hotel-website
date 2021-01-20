@@ -810,3 +810,283 @@ $radius: 10px;
     }
   }
 }
+
+
+
+// <!--================TESTIMONAILS===============-->
+
+$gradient-background: linear-gradient(to bottom, $primary, $accent);
+
+.title-t {
+  text-align: center;
+  margin-bottom: 5rem;
+  span {
+    text-transform: uppercase;
+    color: $secoundary;
+  }
+}
+.row-feedback {
+  display: flex;
+  justify-content: space-around;
+}
+
+.testimonial-visible {
+  width: 33%;
+}
+
+.testimonial-graphic {
+  width: 33%;
+}
+.section-spacing {
+  padding-bottom: 10px;
+  padding-top: 10px;
+
+  &:first-child {
+    padding-top: 10rem;
+  }
+}
+
+.section-title {
+  margin-bottom: 5rem;
+}
+
+.section-cta-btn {
+  margin-top: 3.5rem;
+}
+
+.gray-arrow {
+  position: relative;
+
+  .triangle-background {
+    position: absolute;
+    top: 0px;
+  }
+}
+
+.testimonial-stars {
+  .testimonial-holder {
+    background: white;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    margin: 0 5%;
+    transform: rotate(8deg);
+  }
+  .holder-new {
+    transform: rotate(-8deg);
+  }
+  .testimonial-meta {
+    h4 {
+      margin-bottom: 0.5rem;
+      font-weight: normal;
+      color: $secoundary;
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+  }
+
+  .feedback-img {
+    display: flex;
+    img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+    }
+    div {
+      margin-left: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      color: $black;
+    }
+  }
+  .testimonial-graphic {
+    opacity: 0.75;
+
+    .testimonial-meta {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .t-graphic-meta-text,
+  .t-graphic-text {
+    display: block;
+    width: 100%;
+    height: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .t-graphic-meta-text {
+    background: #e7eaec;
+
+    &:last-child {
+      width: 80%;
+    }
+  }
+
+  .t-graphic-text {
+    background: #f3f1f1;
+  }
+}
+
+.gradient-background {
+  background: $gradient-background;
+  clip-path: polygon(51% 8%, 78% 0, 100% 0, 100% 100%, 0 100%, 0 0, 21% 0);
+  &.cta-section {
+    padding: 5rem 0 3rem 0;
+  }
+}
+.cta-feedback {
+  text-align: center;
+  color: $white;
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  div {
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-top: -1rem;
+  }
+}
+
+.main-holder {
+  width: 40vw;
+  padding: 0rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+
+  .testimonial-content {
+    p {
+      margin-top: 1rem;
+      color: $black;
+      width: 30vw;
+    }
+  }
+}
+.details-t {
+  h4 {
+    font-weight: normal;
+    color: $secoundary;
+  }
+}
+/*=====================GALLERY==================*/
+
+.title-g {
+  margin-top: 7rem;
+  text-align: center;
+  span {
+    text-transform: uppercase;
+    color: $secoundary;
+  }
+}
+.gallery-items {
+  margin-top: 3rem;
+}
+.case-study-gallery {
+  margin-top: 50px;
+  width: 90%;
+  margin: 50px auto;
+  max-width: 1100px;
+}
+.case-study {
+  position: relative;
+  display: block;
+  height: 25rem;
+  width: 30vw;
+  margin: 0 auto 2rem;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  @media screen and (min-width: 27.5em) {
+    height: 300px;
+    width: 80%;
+  }
+  @media screen and (min-width: 45em) {
+    display: inline-block;
+    width: 45%;
+    margin-left: 25px;
+  }
+  @media screen and (min-width: 65em) {
+    display: inline-block;
+    width: 30%;
+    margin-left: 25px;
+  }
+}
+
+.case-study__img {
+  height: 17rem;
+  width: 33vw;
+  width: 90%;
+  display: block;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+}
+
+.case-study__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  &:after {
+    content: "";
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    background-color: #202020;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+}
+
+.case-study__title {
+  position: relative;
+  top: -200px;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+  font-size: 2.25rem;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  letter-spacing: 5px;
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+}
+
+.case-study__link {
+  position: relative;
+  display: block;
+  width: 60%;
+  top: 250px;
+  padding: 5px 10px;
+  margin: 0 auto;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 1em;
+  transition: all 0.3s cubic-bezier(0.3, 0, 0, 1.3);
+  &:hover {
+    background-color: white;
+    color: #202020;
+  }
+}
+
+.case-study:hover {
+  .case-study__title {
+    top: 0;
+  }
+  .case-study__link {
+    top: 0;
+  }
+
+  .case-study__overlay:after {
+    opacity: 0.75;
+  }
+}
