@@ -1090,3 +1090,286 @@ $gradient-background: linear-gradient(to bottom, $primary, $accent);
     opacity: 0.75;
   }
 }
+
+
+// <!--================CONTACT===============-->
+.container3 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5em;
+  background-color: $primary;
+  margin-bottom: 7rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.title-c {
+  text-align: center;
+  margin-bottom: 3rem;
+  h1 {
+    color: white;
+  }
+  span {
+    color: white;
+    text-transform: uppercase;
+  }
+}
+.wrapper4 {
+  width: 80%;
+}
+.wrapper4 > * {
+  padding: 1em;
+}
+.contact-w {
+  display: flex;
+  justify-content: center;
+}
+.company-info {
+  background-image: url(img/contact2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.company-info h3 {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+.company-info ul {
+  text-align: left;
+  margin-top: 2rem;
+  li {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+.contact {
+  background: #f9feff;
+}
+
+/* FORM STYLES */
+
+.contact form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.contact form label {
+  display: block;
+  color: $black;
+  font-size: 1rem;
+}
+
+.contact form p {
+  margin: 0;
+}
+
+.contact form .full {
+  grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 1em;
+  border: 1px solid #c9e6ff;
+}
+
+.contact form button {
+  background: $primary;
+  border: 0;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+  background: #92bde7;
+  color: white;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+
+/* LARGE SCREENS */
+@media (min-width: 700px) {
+  .wrapper4 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .wrapper4 > * {
+    padding: 2em;
+  }
+
+  .company-info h3,
+  .company-info ul,
+  .brand {
+    text-align: left;
+  }
+}
+// <!--================FOOTER===============-->
+.footer-social {
+  display: flex;
+  margin-left: 3rem;
+  i {
+    color: $secoundary;
+  }
+}
+.letter-1 {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  margin-left: 3rem;
+}
+
+.letter {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid $black;
+}
+.input {
+  display: flex;
+}
+
+.input button {
+  outline: hidden;
+  border: none;
+  background-color: $primary;
+  color: white;
+  width: 4rem;
+  height: 3.3rem;
+  margin-top: 1rem;
+  border-radius: 5px;
+  margin-left: -0.5rem;
+}
+
+.footer-wrap {
+  margin-top: 5rem;
+}
+
+.footer-col img {
+  height: 6rem;
+  width: 7rem;
+  margin-top: -0.5rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+
+.page-footer {
+  display: flex;
+}
+
+.footer-col {
+  width: 25%;
+  margin-right: 5rem;
+  height: 18.5rem;
+  float: left;
+}
+.footer-col p {
+  font-size: 1.5rem;
+}
+.footer-col span {
+  display: flex;
+}
+
+.footer-col ul {
+  margin-top: -1rem;
+  margin-left: -2rem;
+}
+.footer-col ul li {
+  font-size: 1.3rem;
+  list-style-type: none;
+  color: $black;
+  &:hover {
+    color: $primary;
+  }
+}
+
+.page-footer h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-left: -2rem;
+  color: $black;
+}
+
+.page-footer h3::after {
+  content: ".";
+  font-size: 0;
+  width: 80%;
+  height: 2px;
+  background: $secoundary;
+  display: block;
+  margin: 0.5rem 0rem 2.5rem 0rem;
+}
+
+.page-footer li {
+  font-size: 1.3rem;
+  color: $black;
+  line-height: 1.6;
+}
+.page-footer li:hover {
+  color: $black;
+  cursor: pointer;
+}
+
+.wrapper1 {
+  padding-top: 1rem;
+  width: 30rem;
+  height: 5rem;
+  display: flex;
+}
+
+.text {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  padding-right: 3.5rem;
+  color: #dbd5c1;
+}
+
+.copy {
+  font-size: 1rem;
+  color: $black;
+  margin-left: 3rem;
+}
+
+.ending {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.links {
+  display: flex;
+}
+
+.links p {
+  padding-right: 2.2rem;
+  color: $black;
+}
+
+.links p a {
+  color: $black;
+  font-size: 1.1rem;
+  &:hover {
+    color: $primary;
+  }
+}
+.ending p a {
+  text-decoration: none;
+}
+
+.ending p a:hover {
+  color: $black;
+}
+
