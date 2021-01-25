@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+$white: white;
+$black: #353535;
+$black-l: #464646;
+$secoundary: rgb(187, 140, 21);
+$primary: #4d8eff;
+$accent: #2b6ddf;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+.html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  position: relative;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  color: #505050;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.button-primary {
+  white-space: nowrap;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  background-color: $primary;
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+
+  &:hover {
+    background-color: $accent;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button-secoundary {
+  white-space: nowrap;
+  background-color: white;
+  border: 1px solid $primary;
+  padding: 1rem 2rem;
+  color: $primary;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    border: 2px solid $primary;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+//================ABOUT US
+.about-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  .about-cta {
+    width: 40%;
+    margin-top: 1rem;
+    h1 {
+      font-size: 2.2rem;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+    .button-primary {
+      margin-right: 1rem;
+    }
+    p {
+      color: $black-l;
+    }
+  }
+}
+.about-img {
+  img {
+    width: 40vw;
+    height: 60vh;
+    border-radius: 5px;
+  }
+}
+
+.about-icons {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-around;
+  span {
+    text-transform: uppercase;
+    color: $black;
+  }
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f1eeee;
+  padding: 2rem;
+  border-radius: 5px;
+  i {
+    color: $primary;
+    font-size: 4rem;
+    margin-left: 1.5rem;
+  }
+  span {
+    padding-top: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: $black;
+    background-color: white;
+    padding: 0.2rem 0.8rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+}
+
+//<!-- STATS-------- -->
+
+.stats {
+  margin: 7rem 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat {
+  border-right: 2px solid $primary;
+  padding-right: 4rem;
+  &:last-child {
+    border: none;
+    padding-right: 0rem;
+  }
+  p {
+    font-size: 3rem;
+    color: $black-l;
+    font-family: "Playfair Display";
+  }
+  span {
+    text-transform: uppercase;
+    color: $secoundary;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+//<!-- DESCRIPTION -->
+
+.description {
+  width: 100%;
+  margin: 10rem 5rem;
+  display: flex;
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+  p {
+    width: 60%;
+    color: $black-l;
+  }
+}
+
+.desc-img {
+  img {
+    width: 40vw;
+    height: 40wh;
+    border-radius: 5px;
+    margin-right: 5rem;
+  }
+}
+
+//<!-- why choose us -->
+
+.amenities {
+  margin: 2rem 5rem;
+  text-align: center;
+  margin-top: -3rem;
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    color: $black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+  button {
+    margin-top: -2rem;
+  }
+}
+
+.about-icons {
+  display: block;
+  .flex {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon {
+    margin-left: 2rem;
+    width: 14rem;
+    background-color: white;
+    i {
+      font-size: 2.5rem;
+      margin-left: 0rem;
+    }
+    span {
+      color: $secoundary;
+    }
+  }
+}
+
+//===========TEAM============
+.team-w {
+  margin-top: 5rem;
+  text-align: center;
+  h1 {
+    font-size: 2.5rem;
+  }
+  p {
+    text-transform: uppercase;
+    color: $black-l;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
+.team {
+  margin: 5rem 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.person {
+  img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5px;
+  }
+  span {
+    text-transform: uppercase;
+    color: $secoundary;
+    font-size: 0.8rem;
+  }
+  p {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+}
+
+.gradient-background {
+  background: $primary;
+  clip-path: polygon(51% 8%, 78% 0, 100% 0, 100% 100%, 0 100%, 0 0, 21% 0);
+  &.cta-section {
+    padding: 5rem 0 3rem 0;
+  }
+}
+.cta-feedback {
+  text-align: center;
+  color: $white;
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+  div {
+    margin-bottom: 2rem;
+  }
+  p {
+    margin-top: -1rem;
+  }
+}
