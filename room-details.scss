@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+// @import "./about";
+// @import "./rooms";
+// @import "./booking";
+
+$white: white;
+$black: #353535;
+$black-l: #464646;
+$secoundary: rgb(187, 140, 21);
+$primary: #4d8eff;
+$accent: #2b6ddf;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+.html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+  position: relative;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  color: #505050;
+}
+
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+.button-primary {
+  white-space: nowrap;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  background-color: $primary;
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+
+  &:hover {
+    background-color: $accent;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.button-secoundary {
+  white-space: nowrap;
+  background-color: white;
+  border: 1px solid $primary;
+  padding: 1rem 2rem;
+  color: $primary;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+
+  &:hover {
+    border: 2px solid $primary;
+    transform: scale(1.1);
+    transition: ease-in-out 0.2s;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+h1 {
+  font-family: "Playfair Display";
+}
+//<!--================HERO DETAILS===========-
+
+.navigation {
+  margin-left: -5rem;
+  margin-right: -5rem;
+}
+.hero-details {
+  margin-top: 1rem;
+  img {
+    width: 80%;
+    height: 30rem;
+    border-radius: 5px;
+    margin-left: 8rem;
+  }
+  button {
+    margin-right: 1rem;
+  }
+}
+.para {
+  color: $black-l;
+  margin-left: 8rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 4rem;
+  h2 {
+    margin-left: 4rem;
+    color: $black-l;
+  }
+  p {
+    margin-right: 7rem;
+    color: $secoundary;
+  }
+}
+
+//<!--================CTA==========-//
+.cta {
+  display: flex;
+  margin-top: 5rem;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  img {
+    margin: 0;
+    width: 18rem;
+    height: 13rem;
+  }
+}
+.description {
+  width: 40vw;
+  margin-right: 3rem;
+  margin-top: 3rem;
+
+  p {
+    margin-top: 1rem;
+    color: $black-l;
+  }
+}
+
+//<!--================SERVICES==========-//
+
+.services {
+  margin-top: 5rem;
+  text-align: center;
+
+  p {
+    color: $black-l;
+    margin: 1rem;
+  }
+  .service {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+    li {
+      font-size: 1rem;
+      text-transform: uppercase;
+      color: $black-l;
+      margin-bottom: 2rem;
+      text-align: left;
+      i {
+        margin-right: 1rem;
+        color: $secoundary;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+//<!--================OTHER ROOM==========-//
+
+.other {
+  margin-top: 5rem;
+  text-align: center;
+  h1 {
+    margin-bottom: 1rem;
+  }
+  p {
+    color: $black-l;
+    margin-bottom: 3rem;
+  }
+}
+.other-rooms {
+  display: flex;
+}
+.o-room {
+  text-align: left;
+  h3 {
+    font-size: 1.3rem;
+    color: $black;
+    margin-top: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    width: 95%;
+  }
+  img {
+    border-radius: 5px;
+    width: 17rem;
+    height: 14rem;
+  }
+}
+.button {
+  margin-top: -3rem;
+  span {
+    margin-left: 1rem;
+  }
+}
+//<!--================REVIEWS==========-//
+
+.reviews {
+  margin-top: -2rem;
+  margin-bottom: 7rem;
+  .r-p {
+    text-align: center;
+    color: $black-l;
+    margin-bottom: 4rem;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+.r-move {
+  margin-left: 13rem;
+}
+.img {
+  img {
+    width: 7rem;
+    height: 7rem;
+    background-color: #dfdfdf;
+    border-radius: 5px;
+    margin-top: 2rem;
+    padding: 0.5rem;
+  }
+}
+.info {
+  background-color: #f2f2f2;
+  margin-left: 2rem;
+  width: 65%;
+  border-radius: 5px;
+  padding: 1rem;
+  p {
+    color: $black-l;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+  }
+  span {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+}
+.stars i {
+  color: $secoundary;
+}
+.review {
+  display: flex;
+  margin-top: 2rem;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  h2 {
+    color: $black;
+    font-size: 1.2rem;
+  }
+}
+/* <!--========== FAQ=========--> */
+
+.wrapper-faq-section {
+  padding: 5rem;
+  margin: 2rem 0rem;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  p {
+    text-align: center;
+    color: $black-l;
+  }
+}
+
+.wrapper-faq {
+  margin-left: 5rem;
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.faq-image img {
+  width: 55rem;
+  height: 40rem;
+}
+
+.wrapper-questions {
+  margin-top: 3rem;
+  margin-left: 5rem;
+}
+.question {
+  background-color: #fff;
+  cursor: pointer;
+  padding: 25px;
+  width: 85%;
+  text-align: left;
+  border: none;
+  border-bottom: 0.2px solid $secoundary;
+  transition: 0.4s;
+  font-size: 1.2rem;
+  color: $black-l;
+}
+
+.question i {
+  color: $secoundary;
+  float: right;
+  font-size: 1.5rem;
+}
+
+.active,
+.question:hover {
+  background-color: #f2f2f2;
+}
+
+.answer {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  width: 85%;
+}
+
+.answer p {
+  color: var(--tertiaryColor);
+  font-size: 1.3rem;
+  width: 85%;
+}
+
+.footer-wrap {
+  margin-left: -5rem;
+  margin-right: -5rem;
+  margin-top: 5rem;
+}
